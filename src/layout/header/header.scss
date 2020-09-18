@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.header {
+  margin-left: 16.25rem;
+  border-bottom: 1px solid $border-color;
+  padding: 0 2.5rem;
+  height: 4.25rem;
+  background: #fff;
+}
+
+.navbar-nav-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  align-items: center;
+}
+
+.navbar-nav-wrap-content-left {
+  width: 330px;
+}
+
+.navbar-nav-wrap-content-right {
+  margin-left: auto;
+  display: flex;
+}
+
