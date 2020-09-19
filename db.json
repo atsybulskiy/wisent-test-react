@@ -1,4 +1,4 @@
- 
+
 {
     "stats": [
       { "id": 1, "type": "sales", "title": "Sales", "amount": 909.64, "start_date": "2020-08-01", "end_date": "2020-08-31"},
@@ -10,7 +10,7 @@
       { "id": 7, "type": "members", "title": "Members", "amount": 8299, "start_date": "2020-08-01", "end_date": "2020-08-30"},
       { "id": 8, "type": "members", "title": "Members", "amount": 9140, "start_date": "2020-09-01", "end_date": "2020-09-31"}
     ],
-    "prducts": [
+    "products": [
       { "id": 1009, "name": "Lenovo thinkpad t480s", "date_create": 1598966052, "price": 2332.0},
       { "id": 1010, "name": "Iphone X 64gb - White", "date_create": 1599049154, "price": 1229.0},
       { "id": 1011, "name": "Macbook Air Pro i7 2019", "date_create": 1599221954, "price": 1829.0},

@@ -1,0 +1,69 @@
+@import "src/styles/variables";
+
+.icon-sales {
+  width: 55px;
+  height: 55px;
+  background: url("../../../assets/sales.svg") no-repeat;
+}
+
+.icon-items {
+  width: 55px;
+  height: 55px;
+  background: url("../../../assets/items.svg") no-repeat;
+}
+
+.icon-members {
+  width: 55px;
+  height: 55px;
+  background: url("../../../assets/members.svg") no-repeat;
+}
+
+.icon-likes {
+  width: 55px;
+  height: 55px;
+  background: url("../../../assets/likes.svg") no-repeat;
+}
+
+.icon-help {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../../../assets/help.svg") no-repeat;
+}
+
+.icon-arrow {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+
+  &.up {
+    background: url("../../../assets/arrow-up-right.svg") no-repeat;
+  }
+
+  &.down {
+    background: url("../../../assets/arrow-down-right.svg") no-repeat;
+  }
+}
+
+.stats-item {
+  .amount {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .last-month {
+    &.green {
+      color: $green;
+    }
+    &.red {
+      color: $red;
+    }
+  }
+
+  .percents {
+    display: inline-flex;
+    align-items: center;
+  }
+}

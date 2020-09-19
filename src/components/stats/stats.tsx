@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
 
 import {IStats} from "../../interfaces/IStats";
+import {getStats} from '../../api/statsApi';
 
+import StatsItem from './stats-item/stats-item';
+import Loader from '../loader/loader';
 
 import './stats.scss';
-import {getStats} from '../../api/statsApi';
-import StatsItem from './stats-item/stats-item';
 
 const Stats = () => {
     const [stats, setStats] = useState<{ [key: string]: IStats[] }>({})
@@ -27,14 +28,10 @@ const Stats = () => {
         });
     }, [])
 
-    console.log('%c⇒ stats', 'color: #89DDF7', stats);
-
     return (
-        <div className="card stats">
-            <div className="card-body">
-                {loading ? 'loading...' :
-                    Object.keys(stats).map(key => <StatsItem key={key} statsItem={stats[key]}/>)}
-            </div>
+        <div className="row stats">
+            {loading ? <Loader/> :
+                Object.keys(stats).map(key => <StatsItem key={key} statsItem={stats[key]}/>)}
         </div>
     );
 }
