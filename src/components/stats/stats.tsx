@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
 import {IStats} from "../../interfaces/IStats";
-import {getStats} from '../../api/statsApi';
+import {getStats} from '../../api/api';
 
 import StatsItem from './stats-item/stats-item';
 import Loader from '../loader/loader';
@@ -29,7 +29,7 @@ const Stats = () => {
     }, [])
 
     return (
-        <div className="row stats">
+        <div className="row stats mb-4">
             {loading ? <Loader/> :
                 Object.keys(stats).map(key => <StatsItem key={key} statsItem={stats[key]}/>)}
         </div>
