@@ -1,5 +1,6 @@
 import React from 'react';
 import Stats from '../../components/stats/stats';
+import Products from '../../components/products/products';
 
 import './content.scss'
 
@@ -15,6 +16,7 @@ const Content = () => {
                         <Stats/>
                     </div>
                     <div className="col-6">
+                        <Products/>
                     </div>
                 </div>
             </div>

@@ -60,12 +60,15 @@
   color: $text-color;
   font-weight: 500;
   padding: 1rem 2rem;
+  border-left: 2px solid transparent;
+  transition: background-color 0.2s, border-color 0.2s;
 
   .icon {
     margin-right: 1rem;
   }
 
-  &.active {
+  &.active,
+  &:hover {
     background: rgba($primary, 0.08);
     border-left: 2px solid $primary;
     color: $primary;
