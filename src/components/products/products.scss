@@ -1,0 +1,21 @@
+@import "src/styles/variables";
+
+.table {
+  width: 100%;
+
+  th {
+    border-top: none;
+  }
+}
+
+.products {
+  .table {
+    td {
+      font-weight: 400;
+
+      &:first-child {
+        font-weight: 500;
+      }
+    }
+  }
+}
