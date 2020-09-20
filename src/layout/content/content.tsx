@@ -15,7 +15,7 @@ const Content = () => {
                     <div className="col-12">
                         <Stats/>
                     </div>
-                    <div className="col-6">
+                    <div className="col-xl-6 col-lg-12">
                         <Products/>
                     </div>
                 </div>
