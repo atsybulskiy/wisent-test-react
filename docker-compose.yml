@@ -1,0 +1,20 @@
+services:
+  client:
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+    - "5000-5000"
+    volumes:
+    - "/app/node_modules"
+    - "./:/app"
+
+  json-server:
+    image: vimagick/json-server
+    command: -H 0.0.0.0 -p 4000 -w db.json
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./data:/data
+    restart: always
