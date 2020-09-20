@@ -38,7 +38,6 @@ const Products = () => {
                         <tbody>
                             {products.map(i => {
                                 const date = new Date(i.date_create * 1000);
-                                console.log('%c⇒ date', 'color: #89DDF7', date);
                                 return (
                                     <tr key={i.id}>
                                         <td>#{i.id}</td>
