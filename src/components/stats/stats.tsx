@@ -25,6 +25,9 @@ const Stats = () => {
             }, {});
             setStats(statsHash);
             setLoading(false);
+        }).catch((e) => {
+            console.log('%c⇒ e', 'color: #FF5370', e);
+            setLoading(false);
         });
     }, [])
 

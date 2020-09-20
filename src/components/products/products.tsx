@@ -16,10 +16,10 @@ const Products = () => {
         getProducts().then(result => {
             setStats(result.data);
             setLoading(false);
+        }).catch(() => {
+            setLoading(false);
         });
     }, [])
-
-    console.log('%c⇒ products', 'color: #89DDF7', products);
 
     return (
         <div className="card products">
