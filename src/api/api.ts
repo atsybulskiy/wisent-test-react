@@ -4,7 +4,7 @@ import {IStats} from '../interfaces/IStats';
 import {IProduct} from '../interfaces/IProducts';
 import {IBalance} from '../interfaces/IBalances';
 
-const url = 'http://localhost:3000'
+const url = 'http://localhost:3500'
 
 export const getStats = (): Promise<AxiosResponse<IStats[]>> => {
     return axios.get(`${url}/stats`)
