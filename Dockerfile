@@ -10,4 +10,4 @@ COPY . /app
 
 CMD ["yarn", "run", "start"]
 
-EXPOSE 5000
+EXPOSE 3000
