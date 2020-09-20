@@ -16,10 +16,10 @@ const Products = () => {
         getProducts().then(result => {
             setStats(result.data);
             setLoading(false);
+        }).catch(() => {
+            setLoading(false);
         });
     }, [])
-
-    console.log('%c⇒ products', 'color: #89DDF7', products);
 
     return (
         <div className="card products">
@@ -38,7 +38,6 @@ const Products = () => {
                         <tbody>
                             {products.map(i => {
                                 const date = new Date(i.date_create * 1000);
-                                console.log('%c⇒ date', 'color: #89DDF7', date);
                                 return (
                                     <tr key={i.id}>
                                         <td>#{i.id}</td>
