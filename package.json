@@ -6,6 +6,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
+    "@jsplumb/community": "^4.0.0-RC20",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -16,11 +17,13 @@
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "json-server": "^0.16.1",
+    "jsplumb": "^2.14.6",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",

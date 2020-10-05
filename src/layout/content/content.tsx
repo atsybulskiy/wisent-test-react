@@ -1,6 +1,8 @@
 import React from 'react';
+
 import Stats from '../../components/stats/stats';
 import Products from '../../components/products/products';
+import FlowChart from '../../components/flow-chart/flow-chart';
 
 import './content.scss'
 
@@ -14,6 +16,9 @@ const Content = () => {
                 <div className="row">
                     <div className="col-12">
                         <Stats/>
+                    </div>
+                    <div className="col-xl-6 col-lg-12">
+                        <FlowChart/>
                     </div>
                     <div className="col-xl-6 col-lg-12">
                         <Products/>
