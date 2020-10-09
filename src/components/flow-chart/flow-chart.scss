@@ -1,13 +1,72 @@
 #diagramContainer {
   padding: 20px;
   width: 100%;
-  height: 200px;
+  height: calc(100vh - 180px);
   border: 1px solid gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  overflow: auto;
 }
 
 .item {
-  height: 80px;
-  width: 80px;
-  border: 1px solid red;
-  float: left;
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border: 1px solid #e9eef4;
+  border-radius: 4px;
+  font-size: 12px;
+  background: #eef7f6;
+  left: 20px;
+  padding: 5px;
+  display: flex;
+
+  &:hover {
+    cursor: grab;
+  }
+
+  .inner {
+    background: #e1eefe;
+    flex: 1;
+    padding: 5px;
+  }
+
+  .title {
+    background: #fff;
+    height: 32px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    .text-placeholder {
+      height: 8px;
+      width: 70%;
+      background: #9dc8fb;
+      margin-bottom: 5px;
+      border-radius: 4px;
+
+      &:first-child {
+        background: #6aabfd;
+        width: 90%;
+      }
+
+      &:last-child {
+        width: 80%;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    left: 220px;
+  }
+
+  &:nth-child(3) {
+    left: 420px;
+  }
+}
+
+.jtk-dragged {
+  cursor: grabbing !important;
 }

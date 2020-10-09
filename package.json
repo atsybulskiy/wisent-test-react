@@ -22,8 +22,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "typescript": "~3.7.2",
-    "yarn": "^1.22.10"
+    "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,7 +32,13 @@
     "server": "json-server -p 3500 --watch data/db.json"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "jsx-quotes": "error",
+      "quotes": ["error", "single"],
+      "semi": ["error", "always", { "omitLastInOneLineBlock": true}]
+
+    }
   },
   "browserslist": {
     "production": [
