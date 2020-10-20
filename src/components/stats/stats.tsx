@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-import {IStats} from "../../interfaces/IStats";
+import {IStats} from '../../interfaces/IStats';
 import {getStats} from '../../api/api';
 
 import StatsItem from './stats-item/stats-item';
@@ -9,8 +9,8 @@ import Loader from '../loader/loader';
 import './stats.scss';
 
 const Stats = () => {
-    const [stats, setStats] = useState<{ [key: string]: IStats[] }>({})
-    const [loading, setLoading] = useState(false)
+    const [stats, setStats] = useState<{ [key: string]: IStats[] }>({});
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         setLoading(true);
@@ -29,7 +29,7 @@ const Stats = () => {
             console.log('%c⇒ e', 'color: #FF5370', e);
             setLoading(false);
         });
-    }, [])
+    }, []);
 
     return (
         <div className="row stats mb-4">

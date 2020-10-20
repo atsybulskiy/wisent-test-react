@@ -4,7 +4,7 @@ import Search from '../../components/search/search';
 import Notifications from '../../components/notifications/notifications';
 import Profile from '../../components/profile/profile';
 
-import './header.scss'
+import './header.scss';
 
 function Header() {
     return (
